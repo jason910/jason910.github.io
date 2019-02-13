@@ -1,9 +1,127 @@
 <!doctype html>
-<html>
-<head>
-<title>JASON NGUYEN | HOME PAGE</title>
-</head>
-<body>
-<h1>WELCOME TO JASON NGUYEN WEBSITE</h1>
-</body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" type="image/x-icon" href="img/avar.jpeg">
+  		<title>JASON NGUYEN | HOME PAGE</title>
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link href="css/home-page.css" rel="stylesheet">
+		<script src="js/script-home.js"></script>
+
+	</head>
+
+	<body translate="no">
+
+	  <header>
+	<nav>
+	  <div class="menu-container">
+		<!-- Menu -->
+		<ul class="menu">
+		  <li class="menu-apple">
+			<a href="#">
+			  <i class="fa fa-spinner fa-spin fa-1x fa-fw" aria-hidden="true"></i>
+			</a>
+		  </li>
+		  		
+			<li class="menu-mac is-closed">
+			<a href="#">
+			  <span>TRANG CHỦ</span>
+			</a>
+		  </li>
+		  <li class="menu-iPhone is-closed">
+			<a href="#">
+			  <span>HỌC TẬP</span>
+			</a>
+		  </li>
+		  <li class="menu-watch is-closed">
+			<a href="#">
+			  <span>PHẦN MỀM</span>
+			</a>
+		  </li>
+		  <li class="menu-tv">
+			<a href="#">
+			  <span>LIÊN HỆ</span>
+			</a>
+		  </li>
+		  <li class="menu-search is-closed">
+			<a href="#">
+			  <i class="fa fa-search" aria-hidden="true"></i>
+			</a>
+		  </li>
+		  <li class="menu-store is-closed">
+			<a href="#">
+			  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+			</a>
+		  </li>
+		</ul>
+
+		<!-- Search -->
+		<div class="menu-search-container">
+		  <div class="menu-search-input">
+		  <form action="https://www.google.com/" method="get">
+			<a href="#">
+			  <i class="fa fa-search" aria-hidden="true"></i>
+			</a>
+			<input class="menu-search-input" type="text" aria-label="Tìm kiếm" placeholder="Nhập từ khóa tìm kiếm ..." autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false">
+		  </form>
+		  </div>
+		  <a class="menu-search-close" href="#">
+			<i class="fa fa-close" aria-hidden="true"></i>
+		  </a> 
+		  <div class="search-sub-menu">
+		  <h3>Tìm kiếm nhanh</h3>
+		  <ul>
+			<li><a href="#">Cơ sở lập trình</a></li>
+			<li><a href="#">Kỹ thuật lập trình</a></li>
+			<li><a href="#">Cấu trúc dữ liệu và Thuật giải</a></li>
+			<li><a href="#">Ứng dụng web</a></li>
+			<li><a href="#">Tiếng Anh</a></li>
+		  </ul>
+		</div>
+		</div>
+
+	  </div>
+	</nav>
+	</header>
+	<div class="fade-screen"></div>
+		<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+
+		<script>
+		  (function() {
+
+	  'use strict';
+
+	  var $searchView = $('.menu-search-container');
+	  var $menu = $('.menu-mac, .menu-iPad, .menu-iPhone, .menu-watch, .menu-tv, .menu-support, .menu-search, .menu-store');
+	  var $fadeScreen = $('.fade-screen');
+
+	  $('li.menu-search a, .fade-screen, .menu-search-close').on('click', function(e) {
+
+		$searchView.toggleClass('active');
+
+		setTimeout(function(){
+		  $searchView.children().find('input').focus();
+		}, 1100);
+
+		$fadeScreen.toggleClass('visible');
+		$menu.removeClass('is-closed');
+		$menu.toggleClass('hidden');
+
+		e.preventDefault();
+	  });
+
+	  $('.fade-screen,.menu-search-close').on('click', function(e) {
+		$menu.toggleClass('is-closed');
+		e.preventDefault();
+	  });
+
+	}())
+    </script>
+	</body>
 </html>
