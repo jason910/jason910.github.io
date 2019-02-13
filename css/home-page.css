@@ -493,3 +493,39 @@ nav {
   float: none;
   padding-right: 0;
 }
+
+.intro > img {
+	width: 520px;
+	margin-left: 100px;
+}
+
+.intro > div {
+	position:fixed;
+	top: 250px;
+	left: 750px;
+	width: 500px;
+	display: inline-block;
+}
+
+.intro {
+	margin-top: 50px;
+}
+
+table {
+	color: white;
+}
+
+th {
+	text-align: center;
+}
+td {
+	padding: 5px;
+}
+
+a {
+	color: blue;
+}
+
+a:hover {
+	color: green;
+}
