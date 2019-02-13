@@ -500,13 +500,13 @@ nav {
 
 .intro > img {
 	width: 520px;
-	margin-left: 100px;
+	margin-left: 50px;
 }
 
 .intro > div {
 	position:fixed;
 	top: 250px;
-	left: 750px;
+	left: 570px;
 	width: 500px;
 	display: inline-block;
 }
@@ -532,4 +532,16 @@ a {
 
 a:hover {
 	color: green;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #CCCCCC;
+	color: blue;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 0;
 }
