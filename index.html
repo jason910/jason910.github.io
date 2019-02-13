@@ -39,15 +39,20 @@
 			<a href="english.html">
 			  <span>TIẾNG ANH</span>
 			</a>
-		  </li>
+			</li>
 		  <li class="menu-tv is-closed">
-			<a href="#">
-			  <span>LIÊN HỆ</span>
+			<a href="app.html">
+			  <span>PHẦN MỀM</span>
 			</a>
 		  </li>
 		  <li class="menu-search is-closed">
 			<a href="#">
 			  <i class="fa fa-search" aria-hidden="true"></i>
+			</a>
+		  </li>
+			<li class="menu-store is-closed">
+			<a href="#contact">
+			  <i title="Liên hệ hoặc đặt câu hỏi" class="fa fa-phone" aria-hidden="true"></i>
 			</a>
 		  </li>
 		</ul>
@@ -126,6 +131,9 @@
 					<th colspan="2"><h1>NGUYỄN VĂN BẢY</h1></th>
 				</tr>
 				<tr>
+					<th colspan="2"><hr/></th>
+				</tr>
+				<tr>
 					<td>- Trường</td>
 					<td>: Đại học Mở thành phố Hồ Chí Minh</td>
 				</tr>
@@ -138,22 +146,44 @@
 					<td>: DH17TH05</td>
 				</tr>
 				<tr>
+					<th colspan="2"><hr/></th>
+				</tr>
+				<tr>
 					<td>
-						<a href="https://www.facebook.com/JasonNguyenn" target="_blank">
-						  <i class="fa fa-facebook-square" aria-hidden="true"> Jason Nguyen</i>
-						</a>
+						<i class="fa fa-facebook-square" aria-hidden="true">
+						<a href="https://www.facebook.com/JasonNguyenn" target="_blank"> Jason Nguyen</a></i>
 					</td>
 					<td>
-						<a href="mailto:bay.nguyen.van091099@gmail.com" target="_blank">
-							<i class="fa fa-envelope" aria-hidden="true"> bay.nguyen.van091099@gmail.com</i>
-						</a>
+						<i class="fa fa-envelope" aria-hidden="true">
+						<a href="mailto:bay.nguyen.van091099@gmail.com" target="_blank"> bay.nguyen.van091099@gmail.com</a></i>
 					</td>
 				</tr>
 			</table>
 		</div>
 		
+		
 		<p class="footer">Copyright &copy 2019 - Jason Nguyen</p>
 		
 	</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<script>
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			  } else {
+				document.getElementById("myBtn").style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+
 	</body>
 </html>
